@@ -1,1 +1,8 @@
-
+name: simple work flow
+'on': push
+jobs:
+  cool_job:
+    runs-on: ubuntu-latest
+steps:
+  - name: Run a simple echo
+run: echo "something running"
